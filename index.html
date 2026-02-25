@@ -1,0 +1,253 @@
+<!DOCTYPE html> <!-- 最新のHTML5形式 -->
+<html lang="ja"> <!-- 日本語のコンテンツに設定 -->
+
+<head>
+  <meta charset="UTF-8"> <!-- 文字化けしないように日本語対応（UTF-8） -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- スマホでも見やすいように画面幅を自動調整します -->
+  <title>Design House Renovations</title><!-- ページのタイトル -->
+  <!-- 文字を綺麗なフォントで表示 -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+  <!-- Google Fontsから『Noto Sans』などを読み込み、どの端末で見ても綺麗な文字になるようにしています -->
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700&family=Noto+Serif+JP:wght@500;700&display=swap" rel="stylesheet">
+
+  <!-- reset.css & style.css 読み込み -->
+  <link rel="stylesheet" href="../Renovate/Common/reset.css">
+  <link rel="stylesheet" href="style/style.css">
+</head>
+
+
+<!-- ヘッダー・ナビゲーション -->
+<body id="top">
+<header class="header">
+  <div class="header-inner">
+    <h1 class="header-logo">Design House Renovations</h1>
+
+    <input type="checkbox" id="drawer-toggle">
+
+    <label for="drawer-toggle" class="drawer-btn">
+      <span></span><span></span><span></span>
+    </label>
+
+    <nav class="pc-nav">  <!-- PCナビ -->
+      <ul>
+        <li><a href="#concept">コンセプト</a></li>
+        <li><a href="#service">サービス</a></li>
+        <li><a href="#flow">施工の流れ</a></li>
+        <li><a href="#qa">よくあるご質問</a></li>
+        <li><a href="#contact">お問い合わせ</a></li>
+      </ul>
+    </nav>
+
+    <nav class="drawer-nav"> <!-- ドロワーナビ -->
+      <ul>
+        <li><a href="#concept">コンセプト</a></li>
+        <li><a href="#service">サービス</a></li>
+        <li><a href="#flow">施工の流れ</a></li>
+        <li><a href="#qa">よくあるご質問</a></li>
+        <li><a href="#contact">お問い合わせ</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<main>
+  <div class="main-visual"> <!-- メイン画像 -->
+    <picture>
+      <!-- スマホ用 -->
+      <source srcset="Images/heroSP.jpg" media="(max-width: 768px)">
+  
+      <!-- PC用（デフォルト） -->
+      <img src="Images/main.jpg" alt="リビングダイニング">
+    </picture>
+  </div>
+
+<!-- コンセプト紹介 -->
+  <section id="concept" class="section concept">
+    <h2 class="section-title">CONCEPT</h2>
+    <p class="section-en"><span class="subtitle1">—</span> コンセプト <span class="subtitle2">—</span></p>
+    <h3 class="concept-heading">家族が笑顔になれる場所</h3>
+    <p class="section-text">
+       <span>
+         家族が集う、温かく居心地の良い空間づくりを目指して、幅広い年代の方に安心して過ごしていただける空間づくりや、お手入れ
+         のしやすい素材を使用したリフォームをご提案いたします。
+       </span>
+    </p>
+  </section>
+
+  <!-- サービス紹介 -->
+  <section id="service" class="section">
+    <h2 class="section-title">SERVICE</h2>
+    <p class="section-en"><span class="subtitle1">—</span> サービス <span class="subtitle2">—</span></p>
+
+    <div class="service-list">
+      <article class="service-card">
+        <img src="Images/service_bath.jpg" alt="浴室">
+        <h3 class="service-title">浴室</h3>
+        <p class="service-text">ご家族が一緒に入れる広めの浴槽や手すり等、安全性に配慮しています。</p>
+        <a href="#" class="service-more">more</a>
+      </article>
+
+      <article class="service-card">
+        <img src="Images/service_living.jpg" alt="リビング">
+        <h3 class="service-title">リビング</h3>
+        <p class="service-text">照明や家具の配置等、くつろぎやすい空間づくりを大切にしています。</p>
+        <a href="#" class="service-more">more</a>
+      </article>
+
+      <article class="service-card">
+        <img src="Images/service_kitchen.jpg" alt="キッチン">
+        <h3 class="service-title">キッチン</h3>
+        <p class="service-text">機能性だけでなく、デザイン性にもこだわっております。</p>
+        <a href="#" class="service-more">more</a>
+      </article>
+    </div>
+  </section>
+
+  <!-- 施工の流れ -->
+  <section id="flow" class="section bg-flow">
+    <h2 class="section-title">FLOW</h2>
+    <p class="section-en red"><span class="subtitle1">—</span> 施工の流れ <span class="subtitle2">—</span></p>
+    <ul class="flow-list">
+      <li class="flow-item">ご相談</li>
+      <li class="flow-item">現地調査</li>
+      <li class="flow-item">お見積り</li>
+      <li class="flow-item">ご契約</li>
+      <li class="flow-item">施工</li>
+      <li class="flow-item">お引渡し</li>
+    </ul>
+  </section>
+
+  <!-- よくあるご質問 -->
+  <section id="qa" class="section bg-gray">
+    <h2 class="section-title">Q&amp;A</h2>
+    <p class="section-en"><span class="subtitle1">—</span> よくあるご質問 <span class="subtitle2">—</span></p>
+
+    <dl class="qa-list">
+      <div class="qa-item">
+        <dt class="qa-q"><span class="qa-icon q">Q</span> 見積りは無料ですか？</dt>
+        <dd class="qa-a"><span class="qa-icon a">A</span> はい。お見積りは無料で承っております。ホームページよりお気軽にお問い合わせください。</dd>
+      </div>
+
+      <div class="qa-item">
+        <dt class="qa-q"><span class="qa-icon q">Q</span> 普段通り生活をしながらのリフォーム工事は可能ですか？</dt>
+        <dd class="qa-a"><span class="qa-icon a">A</span> はい。もちろん可能です。工事中の箇所は、何日間か使用できなくなる場合もございますのであらかじめご了承ください。
+        大型リフォームの場合には、仮住まいもお薦めしております。</dd>
+      </div>
+    </dl>
+  </section>
+
+  <!-- お問い合わせフォーム -->
+  <section id="contact" class="section bg-contact">
+    <h2 class="section-title">CONTACT</h2>
+    <p class="section-en"><span class="subtitle1">—</span> お問い合わせ <span class="subtitle2">—</span></p>
+
+    <form class="contact-form">
+      <div class="form-row">
+          <label class="form-label">
+            お問い合わせ種別
+            <span class="required">必須</span>
+          </label>
+
+          <div class="form-field radio-group">
+            <label><input type="radio" name="type"> 資料請求</label>
+            <label><input type="radio" name="type"> ご相談</label>
+          </div>
+        </div>
+
+        <div class="form-row">
+           <label class="form-label">
+             お名前
+             <span class="required">必須</span>
+           </label>
+          <div class="form-field Ssize">
+             <input type="text">
+           </div>
+        </div>
+
+         <div class="form-row">
+           <label class="form-label">
+             フリガナ
+             <span class="required">必須</span>
+           </label>
+           <div class="form-field Ssize">
+             <input type="text">
+           </div>
+         </div>
+
+         <div class="form-row">
+           <label class="form-label">
+             電話番号
+             <span class="required">必須</span>
+           </label>
+           <div class="form-field Ssize">
+             <input type="text">
+           </div>
+         </div>
+
+            <div class="form-row">
+              <label class="form-label">
+                住所
+                <span class="required">必須</span>
+              </label>
+
+              <div class="form-field SSsize address-wrap">
+                <span class="address-icon">〒</span>
+                <input type="text">
+              </div>
+            </div>
+
+          <div class="form-row address-sub">
+             <div class="form-field">
+                <input type="text">
+             </div>
+           </div>
+
+          <div class="form-row">
+            <label class="form-label">
+              メールアドレス
+              <span class="required">必須</span>
+            </label>
+            <div class="form-field">
+             <input type="text">
+            </div>
+         </div>
+       
+         <div class="form-row">
+            <label class="form-label">
+              メールアドレス（確認用）
+              <span class="required">必須</span>
+            </label>
+            <div class="form-field">
+             <input type="text">
+            </div>
+         </div>
+
+         <div class="form-row textarea-row">
+            <label class="form-label">
+              お問い合わせ内容
+              <span class="required">必須</span>
+            </label>
+            <div class="form-field">
+             <textarea></textarea>
+            </div>
+         </div>
+
+         <button type="submit">入力内容を確認する ▶</button>
+     
+    </form>
+  </section>
+
+</main>
+
+<!-- フッター -->
+<footer class="footer">
+  <p>© 2023 Design House Renovations</p>
+</footer>
+
+<!-- ページトップ戻り -->
+<a href="#top" class="scroll-top">▲</a>
+
+</body>
+</html>
